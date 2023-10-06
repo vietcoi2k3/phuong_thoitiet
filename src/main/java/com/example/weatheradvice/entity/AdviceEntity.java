@@ -1,6 +1,7 @@
 package com.example.weatheradvice.entity;
 
 import com.fasterxml.jackson.annotation.JsonBackReference;
+import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 import com.fasterxml.jackson.annotation.JsonManagedReference;
 import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
@@ -21,6 +22,7 @@ public class AdviceEntity {
     private String weatherConEn;
     private String adviceEn;
     private String adviceVn;
+    private String weatherConVn;
 
     @Column(name = "adviceTypeId")
     private Integer adviceTypeId;

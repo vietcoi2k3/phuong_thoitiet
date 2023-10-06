@@ -15,6 +15,8 @@ public class CodeEntity {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Integer id;
 
+    private String code;
+
     @Column(name = "adviceEntityId")
     private Integer adviceEntityId;
 
